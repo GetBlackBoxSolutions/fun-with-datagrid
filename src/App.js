@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DataGrid from "./components/DataGrid";
 
-function App() {
+const App = () => {
+  const data = [
+    { id: 1, name: "John Doe" },
+    { id: 2, name: "Jane Smith" },
+    // Add more data items as needed
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Data Grid Example</h1>
+      <DataGrid data={data} pageSize={5} />
     </div>
   );
-}
+};
 
 export default App;
