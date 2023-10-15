@@ -1,12 +1,9 @@
 import React from "react";
 import DataGrid from "./components/DataGrid/DataGrid";
+import createData from "./data/mock-data";
 
 const App = () => {
-  const data = [
-    { id: 1, name: "John Doe" },
-    { id: 2, name: "Jane Smith" },
-    // Add more data items as needed
-  ];
+  const data = createData();
 
   return (
     <div>
