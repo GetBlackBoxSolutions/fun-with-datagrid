@@ -1,5 +1,5 @@
 import React from "react";
-import DataGrid from "./components/DataGrid";
+import DataGrid from "./components/DataGrid/DataGrid";
 
 const App = () => {
   const data = [
