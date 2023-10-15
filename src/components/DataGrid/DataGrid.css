@@ -1,0 +1,51 @@
+.data-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-grid-table th,
+.data-grid-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.data-grid-table th {
+  background-color: #f2f2f2;
+}
+
+.data-grid-table td {
+  text-align: center;
+}
+
+.data-grid-table td:first-child {
+  font-weight: bold;
+}
+
+.data-grid-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination button.active {
+  background-color: #333;
+  color: #fff;
+}
